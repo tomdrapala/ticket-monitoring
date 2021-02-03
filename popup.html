@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ticket Monitoring</title>
+	<script src="popup.js"></script>
+	<link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+
+<body>
+
+	<h2 class="title">Ticket Monitoring</h2>
+
+	<section class="switch_area">
+		<label class="switch">
+		  <input id="switch_btn" type="checkbox">
+		  <span class="slider round"></span>
+		</label>
+	</section>
+
+
+	<section class="rate_area">
+		<h3 class="rate_text">Refresh rate: </h3>
+		<input type="number" id="refresh_rate" min="0" step="1"/>
+		<input type="submit" id="refresh_btn" value="Confirm"/>
+	</section>	
+
+
+	<section class="sound_alert_area">
+		<input type="checkbox" id="alert_btn" name="alert_btn">
+  		<label for="alert_btn" id="alert_label">Sound alert</label>
+	</section>
+
+
+</body>
+</html>

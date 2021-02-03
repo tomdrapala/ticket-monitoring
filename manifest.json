@@ -1,0 +1,38 @@
+{
+	"manifest_version": 2,
+	"name": "Ticket Monitoring",
+	"version": "1.0",
+	"description": "Extension alerting when new ticket appears in given ticket management system.",
+	"icons": {
+		"128": "images/icon128.png",
+		"48": "images/icon48.png",
+		"16": "images/icon16.png"
+	},
+	"page_action": {
+		"default_icon": "images/icon16.png",
+		"default_popup": "popup.html",
+		"default_title": "Ticket Monitoring"
+	},
+
+	"background": {
+		"scripts": ["eventPage.js"],
+		"persistent": false
+	},
+
+	"content_scripts": [
+		{
+			"matches": ["url-of-your-ticketing-system"],
+			"js": ["content.js"]
+		}
+	],
+
+	"permissions": [
+		"tabs",
+		"storage",
+		"url-of-your-ticketing-system"
+	],
+
+	"web_accessible_resources": [
+    	"target.mp3"
+	]
+}
