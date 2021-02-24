@@ -1,4 +1,4 @@
-# ticket-monitoring
+# Ticket Monitoring Tool
 Google Chrome extension that works on Ticket Management System and notifies user when new ticket appears.
 
 Extension operates on a list of tickets sorted by creation time in descending order.
